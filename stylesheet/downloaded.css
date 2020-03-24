@@ -14,18 +14,6 @@
          url("https://fonts.shopifycdn.com/avenir_next/avenirnext_n4.a26a334a0852627a5f36b195112385b0cd700077.woff?&hmac=a2ddfdd7d87fb2a6b6030063f73bc2e197096aa8c8a631fcb4632f104726a9c8") format("woff");
   }
   
-  /* ------------------------ Critical Helper Classes ------------------------- */
-  .critical-hide {
-    display: none;
-  }
-  
-  .critical-clear {
-    opacity: 0;
-    visibility: hidden;
-  }
-  
-
-  
   /* ----------------------------- Global Styles ------------------------------ */
   *, *::before, *::after {
     box-sizing: border-box;
@@ -86,6 +74,12 @@
   
   
   /* ----------------------------- Slideshow --------------------------------- */
+
+  
+  .slider .slideshow {
+    height: calc(100vh - 35px);
+  }
+
   .slideshow {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -98,23 +92,15 @@
     background-color: #dfd8c5;
   }
   
-  .slideshow--full .slideshow {
-    height: calc(100vh - 35px);
-  }
   
-  @media only screen and (max-width: 749px) {
-    .slideshow--adapt .slideshow {
-      max-height: 125vw;
-      min-height: 75vw;
-    }
-  }
-  
-  .slideshow__slides {
+  /* ul element */
+  .slideshow {
     margin: 0;
     padding: 0;
     list-style: none;
   }
   
+  /* li element */
   .slideshow__slide {
     position: absolute;
     height: 100%;
@@ -124,6 +110,8 @@
     transition: all 0.5s cubic-bezier(0, 0, 0, 1);
   }
   
+
+/* Active Slide */
   .slideshow__slide--active {
     transition: all 0.5s cubic-bezier(0, 0, 0, 1);
     opacity: 1;
@@ -140,31 +128,6 @@
     z-index: 3;
   }
   
-  .slideshow__image {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    z-index: 1;
-    transition: opacity 0.8s cubic-bezier(0.44, 0.13, 0.48, 0.87),filter 400ms,-webkit-filter 400ms;
-    font-family: "object-fit: cover";
-  }
-  
-  .slideshow__image .placeholder-svg {
-    display: block;
-    fill: rgba(74,74,74,0.35);
-    background-color: #f1eee6;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 100%;
-    width: auto;
-    max-height: none;
-    max-width: none;
-    -ms-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-  
   .slideshow__image .placeholder-background {
     background-color: #faf9f6;
     position: absolute;
@@ -172,21 +135,4 @@
     right: 0;
     bottom: 0;
     left: 0;
-  }
-  
-  .slideshow__navigation {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .slideshow__text-content-mobile,
-  .slideshow__button-cta-single {
-    display: none;
-  }
-  
-  .slideshow__indicators {
-    margin: 0;
-    padding: 0;
-    list-style: none;
   }

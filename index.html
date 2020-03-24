@@ -8,154 +8,110 @@
   <link rel="stylesheet" href="stylesheet/downloaded.css">
   <link rel="stylesheet" href="stylesheet/main.css">
 </head>
-
+<style>
+  .slideshow .slideshow__overlay::before {
+    background-color: #313131;
+    opacity: 0.3;
+  }
+</style>
 <body>
 
+  <section class="slider">
+    <ul class="slideshow">
+      <li class="slideshow__slide slideshow__slide--active slideshow__overlay" id="Slide0">
+        <div class="slideshow__image">
+          <div class="placeholder-background">
 
-  <div id="shopify-section-slideshow" class="shopify-section index-section">
-    <style>
-      #Slideshow-slideshow .slideshow__overlay::before {
-        background-color: #313131;
-        opacity: 0.3;
-      }
-
-      #Slideshow-slideshow .slideshow__heading,
-      #Slideshow-slideshow .slideshow__button-label {
-        color: #ffffff;
-      }
-    </style>
-    <div class="slideshow--full" data-section-id="slideshow" data-section-type="slideshow-section">
-      <div id="Slideshow-slideshow" class="slideshow" role="region" aria-describedby="slideshow-info" tabindex="-1"
-        aria-label="slideshow">
-        <ul class="slideshow__slides">
-          <li class="slideshow__slide slideshow__slide--active slideshow__overlay" id="Slide0">
-            <div class="slideshow__image">
-              <div class="placeholder-background">
-
-                <!-- svg1 -->
-                <!-- <img src="svg\svg1.jpg" alt="" class="svg"> -->
-                <object data="svg\svg1.svg" type=""></object>
-              </div>
-            </div>
-            <div class="page-width">
-              <div class="" data-animate>
-                <h2 class="h1">
-                  Tell your story
-                </h2>
-              </div>
-            </div>
-          </li>
-          <li class="slideshow__slide slideshow__overlay" id="Slide1" aria-hidden="true">
-            <div class="slideshow__image">
-              <div class="placeholder-background">
-
-                <!-- svg2 -->
-                <!-- <img src="svg\svg2.jpg" alt="" class="svg"> -->
-                <object data="svg\svg2.svg" type=""></object>
-              </div>
-            </div>
-            <div class="page-width">
-              <div class="" data-animate>
-                <h2 class="h1">
-                  Tell your story
-                </h2>
-              </div>
-            </div>
-          </li>
-          <li class="slideshow__slide slideshow__overlay" id="Slide2" aria-hidden="true">
-            <div class="slideshow__image">
-              <div class="placeholder-background">
-
-                <!-- svg3 -->
-                <!-- <img src="svg\svg3.jpeg" alt="" class="svg"> -->
-                <object data="svg\svg3.svg" type=""></object>
-              </div>
-            </div>
-            <div class="slideshow__text-container page-width">
-              <div class="" data-animate>
-                <h2 class="h1">
-                  Tell your story
-                </h2>
-              </div>
-            </div>
-          </li>
-          <li class="slideshow__slide slideshow__overlay" id="Slide3" aria-hidden="true">
-            <div class="slideshow__image">
-              <div class="placeholder-background">
-
-                <!-- svg4 -->
-                <!-- <img src="svg\svg4.jpg" alt="" class="svg"> -->
-                <object data="svg\svg4.svg" type=""></object>
-              </div>
-            </div>
-            <div class="page-width">
-              <div class="" data-animate>
-                <h2 class="h1">
-                  Tell your story
-                </h2>
-              </div>
-            </div>
-          </li>
-        </ul>
-        <div class="critical-hide" data-count="4">
-          <div class="">
-            <button class="btn--clear">
-              <span class="">Slide 1</span>
-              <span class="">Slide title</span>
-            </button></div>
-          <div class="">
-            <button class="btn--clear">
-              <span class="">Slide 2</span>
-              <span class="">Slide title</span>
-            </button></div>
-          <div class="">
-            <button class="btn--clear">
-              <span class="">Slide 3</span>
-              <span class="">Slide title</span>
-            </button></div>
-          <div class="">
-            <button class="btn--clear">
-              <span class="">Slide 4</span>
-              <span class="">Slide title</span>
-            </button></div>
+            <!-- svg1 -->
+            <!-- <img src="svg\svg1.jpg" alt="" class="svg"> -->
+            <object data="svg\svg1.svg" type=""></object>
+          </div>
         </div>
+        <div class="page-width">
+          <div class="">
+            <h2 class="h1">
+              Tell your story
+            </h2>
+          </div>
+        </div>
+      </li>
+      <li class="slideshow__slide slideshow__overlay" id="Slide1">
+        <div class="slideshow__image">
+          <div class="placeholder-background">
 
-        <ul class="slideshow__navigation">
-          <li>
-            <button class="critical-hide" aria-label="Previous slide" disabled="disabled" data-slider-navigation
-              data-slider-navigation-previous></button>
-          </li>
-          <li>
-            <button class="critical-hide" aria-label="Next slide" data-slider-navigation
-              data-slider-navigation-next></button>
-          </li>
-        </ul>
-      </div>
-      <ol class="slideshow__indicators">
-        <li>
-          <a href="#Slideshow-slideshow" class="critical-clear" data-slide-index="0" data-link-no-focus>
-            <span class="visually-hidden">Slide 1</span>
-          </a>
-        </li>
-        <li>
-          <a href="#Slideshow-slideshow" class="critical-clear" data-slide-index="1" data-link-no-focus>
-            <span class="visually-hidden">Slide 2</span>
-          </a>
-        </li>
-        <li>
-          <a href="#Slideshow-slideshow" class="critical-clear" data-slide-index="2" data-link-no-focus>
-            <span class="visually-hidden">Slide 3</span>
-          </a>
-        </li>
-        <li>
-          <a href="#Slideshow-slideshow" class="critical-clear" data-slide-index="3" data-link-no-focus>
-            <span class="visually-hidden">Slide 4</span>
-          </a>
-        </li>
-      </ol>
-      <p id="" class="" aria-hidden="true">Use left/right arrows to navigate the slideshow
-        or swipe left/right if using a mobile device</p>
-    </div>
+            <!-- svg2 -->
+            <!-- <img src="svg\svg2.jpg" alt="" class="svg"> -->
+            <object data="svg\svg2.svg" type=""></object>
+          </div>
+        </div>
+        <div class="page-width">
+          <div class="">
+            <h2 class="h1">
+              Tell your story
+            </h2>
+          </div>
+        </div>
+      </li>
+      <li class="slideshow__slide slideshow__overlay" id="Slide2">
+        <div class="slideshow__image">
+          <div class="placeholder-background">
+
+            <!-- svg3 -->
+            <!-- <img src="svg\svg3.jpeg" alt="" class="svg"> -->
+            <object data="svg\svg3.svg" type=""></object>
+          </div>
+        </div>
+        <div class="slideshow__text-container page-width">
+          <div class="">
+            <h2 class="h1">
+              Tell your story
+            </h2>
+          </div>
+        </div>
+      </li>
+      <li class="slideshow__slide slideshow__overlay" id="Slide3" aria-hidden="true">
+        <div class="slideshow__image">
+          <div class="placeholder-background">
+
+            <!-- svg4 -->
+            <!-- <img src="svg\svg4.jpg" alt="" class="svg"> -->
+            <object data="svg\svg4.svg" type=""></object>
+          </div>
+        </div>
+        <div class="page-width">
+          <div class="">
+            <h2 class="h1">
+              Tell your story
+            </h2>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <ol class="indicators">
+      <li>
+        <a href="#" class="">
+          <span class="slide">Slide 1</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="">
+          <span class="slide">Slide 2</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="">
+          <span class="slide">Slide 3</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="">
+          <span class="slide">Slide 4</span>
+        </a>
+      </li>
+    </ol>
+    <p id="" class="hide">Use left/right arrows to navigate the slideshow
+      or swipe left/right if using a mobile device</p>
+  </section>
 
 </body>
 

@@ -1,0 +1,10 @@
+.hide {
+    border: 2px solid black;
+    display: none;
+}
+
+.slide {
+    border: 2px solid black;
+    z-index: 1000;
+    
+}
