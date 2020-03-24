@@ -33,12 +33,6 @@ body {
   line-height: 1.625;
 }
 
-.page-width {
-  max-width: 980px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
-
 .slider .slideshow {
   height: calc(100vh - 35px);
 }
@@ -90,6 +84,7 @@ body {
 
 .placeholder-background {
   background-color: #faf9f6;
+  opacity: 0.3;
   position: absolute;
   top: 0;
   right: 0;
