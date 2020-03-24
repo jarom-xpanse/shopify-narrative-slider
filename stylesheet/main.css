@@ -1,3 +1,7 @@
+body {
+  overflow: hidden;
+}
+
 .hide {
   border: 2px solid black;
   display: none;
@@ -53,7 +57,7 @@ h2 {
 .indicators {
   z-index: 4;
   position: absolute;
-  bottom: 35px;
+  bottom: 80px;
   width: 100vw;
   list-style: none;
   padding: 0;
