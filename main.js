@@ -1,6 +1,13 @@
 window.onload = init; // call the function only when the page is completely loaded
-var indicators, slideshow, slideTitles, slideItems;
-var span;
+var indicators, slideshow, slideTitles, slideItems, span;
+var width = window.innerWidth;
+var body = document.querySelector('body');
+
+console.log('testing if this updated code is on netlify now');
+window.addEventListener('resize', e=> {
+  width = body.offsetWidth;
+})
+// 750 and up .. 749 and below mobile of this page
 
 function init() {
   indicators = document.querySelector("#indicators");
@@ -14,6 +21,7 @@ function init() {
   window.addEventListener("keyup", detectKey);
 
   function showCursorLocation(e) {
+    if (width < 750) return; // do not run this events on mobile
     let percent = Math.round((e.pageX / window.innerWidth) * 100);
     let moveX = (percent - 50) * -1;
     moveX /= 3;
@@ -21,6 +29,7 @@ function init() {
   }
 
   slideTitles.forEach((e, i) => {
+    if (width < 750) return; // do not run this events on mobile
     e.addEventListener("click", evt => {
       removeClassActive();
       slideItems[i].classList.add("active");
@@ -28,6 +37,7 @@ function init() {
       span[i].classList.add('slide-active');
     });
   });
+  
 
   function detectKey(e) {
     let index = detectClassActive();
