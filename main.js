@@ -3,7 +3,6 @@ var indicators, slideshow, slideTitles, slideItems, span;
 var width = window.innerWidth;
 var body = document.querySelector('body');
 
-console.log('testing if this updated code is on netlify now');
 window.addEventListener('resize', e=> {
   width = body.offsetWidth;
 })

@@ -3,14 +3,14 @@
     font-family: "Monotype Baskerville";
     font-weight: 400;
     font-style: normal;
-    src: url("font\avenirnext_n4.7fd0287595be20cd5a683102bf49d073b6abf144.woff2") format("woff2"),
+    src: url("font/avenirnext_n4.7fd0287595be20cd5a683102bf49d073b6abf144.woff2") format("woff2"),
   }
   
     @font-face {
     font-family: "Avenir Next";
     font-weight: 400;
     font-style: normal;
-    src: url("font\monotypebaskerville_n4.a442627eb38ee82c41c209031edd51460817f34f.woff2") format("woff2"),
+    src: url("font/monotypebaskerville_n4.a442627eb38ee82c41c209031edd51460817f34f.woff2") format("woff2"),
   }
   
   /* ----------------------------- Global Styles ------------------------------ */
@@ -105,14 +105,17 @@ body {
 .slide {
     // border: 2px solid black;
     z-index: 5;
+    display: inline-block;
 
-    transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in;
 }
 
 .slide:hover, .slide-active {
     border-bottom: 2px solid white;
-    padding-bottom: 6px;
+    padding-bottom: 3px;
     margin-bottom: 2em;
+    // transform: translateZ(-50px);
+    transform: translate3d(0px, -15px, 0px);
 }
 
 .slide:hover {
@@ -169,6 +172,8 @@ h2 {
     display: flex;
     justify-content: space-between;
     padding: 0.5em;
+    padding-top: 20px;
+    padding-bottom: 0;
     
     width: 110vw;
     margin-left: -5vw;
