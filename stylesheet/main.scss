@@ -11,6 +11,17 @@ body {
     // border: 2px solid black;
     z-index: 5;
 
+    transition: all 0.1s ease-in-out;
+}
+
+.slide:hover, .slide-active {
+    border-bottom: 2px solid white;
+    padding-bottom: 6px;
+    margin-bottom: 2em;
+}
+
+.slide:hover {
+    opacity: 0.6;
 }
 
 .tree {
