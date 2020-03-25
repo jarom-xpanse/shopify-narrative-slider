@@ -112,7 +112,6 @@ body {
 .slide:hover, .slide-active {
   border-bottom: 2px solid white;
   padding-bottom: 3px;
-  margin-bottom: 2em;
   -webkit-transform: translate3d(0px, -15px, 0px);
           transform: translate3d(0px, -15px, 0px);
 }
