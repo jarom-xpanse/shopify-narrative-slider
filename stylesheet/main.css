@@ -1,3 +1,98 @@
+@font-face {
+  font-family: "Monotype Baskerville";
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/monotype_baskerville/monotypebaskerville_n4.a442627eb38ee82c41c209031edd51460817f34f.woff2?&hmac=a444161b99599785ecaa6f063aef5913a23f289e91d882e201b8e5f061deb9c1") format("woff2"), url("https://fonts.shopifycdn.com/monotype_baskerville/monotypebaskerville_n4.34d106219e9e09b92bd85e327d33f8d3d050295e.woff?&hmac=cfe0e56a2097724c7541d9d8de174e95afa8f0e45564c81beecf2d299734fd22") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/avenir_next/avenirnext_n4.7fd0287595be20cd5a683102bf49d073b6abf144.woff2?&hmac=9b44f1b8d0838c9ac675952e35834e313f8613dc57b8dac9f5bd407fa737a447") format("woff2"), url("https://fonts.shopifycdn.com/avenir_next/avenirnext_n4.a26a334a0852627a5f36b195112385b0cd700077.woff?&hmac=a2ddfdd7d87fb2a6b6030063f73bc2e197096aa8c8a631fcb4632f104726a9c8") format("woff");
+}
+
+/* ----------------------------- Global Styles ------------------------------ */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: #faf9f6;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: "Avenir Next", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #4a4a4a;
+  line-height: 1.625;
+}
+
+.slider .slideshow {
+  height: calc(100vh - 35px);
+}
+
+.slideshow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  min-height: 300px;
+  max-height: calc(100vh - 35px);
+  background-color: #dfd8c5;
+  /* ul element */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* li element */
+  /* Active Slide */
+}
+
+.slideshow li {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  z-index: 0;
+  -webkit-transition: all 0.5s cubic-bezier(0, 0, 0, 1);
+  transition: all 0.5s cubic-bezier(0, 0, 0, 1);
+}
+
+.slideshow .active {
+  -webkit-transition: all 0.5s cubic-bezier(0, 0, 0, 1);
+  transition: all 0.5s cubic-bezier(0, 0, 0, 1);
+  opacity: 1;
+  z-index: 2;
+}
+
+.slideshow li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.placeholder-background {
+  background-color: #faf9f6;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 body {
   overflow: hidden;
 }
@@ -91,5 +186,18 @@ h2 {
   font-stretch: 100%;
   font-weight: 700;
   text-decoration: none;
+}
+
+body {
+  border: 3px solid black;
+}
+
+@media only screen and (max-width: 749px) {
+  body {
+    border: 2px dashed black;
+  }
+  h2 {
+    font-size: 32px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
