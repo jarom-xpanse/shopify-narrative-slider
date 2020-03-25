@@ -1,42 +1,18 @@
 window.onload = init; // call the function only when the page is completely loaded
-var indicators = document.querySelector('#indicators')
-
+var indicators = document.querySelector("#indicators");
 
 function init() {
+  // alert('hello world');
+  window.addEventListener("mousemove", showCursorLocation);
+  window.addEventListener('mouseout', e=>{
+    indicators.style.transform = "translateX(0)"
+  })
 
-    
+  function showCursorLocation(e) {
+    let percent = Math.round((e.pageX / window.innerWidth) * 100);
 
-    // alert('hello world');
-    window.addEventListener('mousemove', showCursorLocation)
-    console.log(window.innerWidth);
-
-    function showCursorLocation(e) {
-        let percent = Math.round((e.offsetX / window.innerWidth) * 100)
-        // console.log(percent-50);
-        indicators.style.transform = `translateX(${(percent-50)*-1}%)`
-    }
-
-
-
-    //transform: translateX(28%)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    let moveX = (percent-50)*-1
+    console.log(moveX);
+    indicators.style.transform = `translateX(${moveX}%)`;
+  }
 }
