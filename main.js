@@ -16,7 +16,7 @@ function init() {
   span = indicators.querySelectorAll('span');
 
   window.addEventListener("mousemove", showCursorLocation);
-  window.addEventListener("mouseout", e => indicators.style.transform = "translateX(0)");
+  // window.addEventListener("mouseout", e => indicators.style.transform = "translateX(0)");
   window.addEventListener("keyup", detectKey);
 
   function showCursorLocation(e) {
@@ -37,7 +37,8 @@ function init() {
     });
   });
   
-
+  if (width < 750) centerActiveSlide();
+  
   function detectKey(e) {
     let index = detectClassActive();
     if (e.key == "ArrowLeft") {
@@ -52,6 +53,11 @@ function init() {
       slideItems[index + 1].classList.add("active");
       // add slide-active in slide-title span
       span[index+1].classList.add('slide-active');
+    }
+    if (width < 750) {
+      let y = document.querySelector('.indicators');
+      y.style.transform = `translateX(0px)`
+      setTimeout(centerActiveSlide, 400);
     }
   }
 
@@ -81,4 +87,22 @@ function init() {
   }
 
 
+}
+
+
+function offset(el) { // get the position of an element relative to the document
+  var rect = el.getBoundingClientRect(),
+  scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+  scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+}
+
+// testing codes
+function centerActiveSlide() {
+  let y = document.querySelector('.indicators');
+  let x = document.querySelector('.slide-active');
+  // y.style.transform = `translateX(0px)`
+  dist = width/2 - x.clientWidth/2 - offset(x).left;
+  y.style.transform = `translateX(${dist}px)`
+  console.log(dist);
 }

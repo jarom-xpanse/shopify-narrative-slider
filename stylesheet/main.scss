@@ -201,5 +201,13 @@ body {
     h2 {
         font-size: 32px;
     }
+    .indicators {
+      width: 150vw;
+    }
+    .slide-active {
+      margin-left: 20vw;
+      margin-right: 20vw;
+      // border: 1px dashed black;
+    }
     
 }
