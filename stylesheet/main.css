@@ -194,23 +194,16 @@ h2 {
   text-decoration: none;
 }
 
-body {
-  border: 3px solid black;
-}
-
 @media only screen and (max-width: 749px) {
-  body {
-    border: 2px dashed black;
-  }
   h2 {
     font-size: 32px;
   }
   .indicators {
-    width: 150vw;
+    width: 200vw;
   }
-  .slide-active {
-    margin-left: 20vw;
-    margin-right: 20vw;
+  .slide {
+    margin-left: 15vw;
+    margin-right: 15vw;
   }
 }
 /*# sourceMappingURL=main.css.map */
