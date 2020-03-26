@@ -5,6 +5,7 @@ var body = document.querySelector('body');
 
 window.addEventListener('resize', e=> {
   width = body.offsetWidth;
+  if (width < 750) centerActiveSlide(); 
 })
 // 750 and up .. 749 and below mobile of this page
 
@@ -37,8 +38,8 @@ function init() {
     });
   });
   
-  if (width < 750) centerActiveSlide();
   
+  if (width < 750) centerActiveSlide(); 
   function detectKey(e) {
     let index = detectClassActive();
     if (e.key == "ArrowLeft") {
@@ -55,9 +56,7 @@ function init() {
       span[index+1].classList.add('slide-active');
     }
     if (width < 750) {
-      let y = document.querySelector('.indicators');
-      y.style.transform = `translateX(0px)`
-      setTimeout(centerActiveSlide, 400);
+      setTimeout(centerActiveSlide, 300);
     }
   }
 
@@ -96,13 +95,14 @@ function offset(el) { // get the position of an element relative to the document
   scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
 }
-
+var prev = 0;
 // testing codes
 function centerActiveSlide() {
   let y = document.querySelector('.indicators');
   let x = document.querySelector('.slide-active');
-  // y.style.transform = `translateX(0px)`
   dist = width/2 - x.clientWidth/2 - offset(x).left;
-  y.style.transform = `translateX(${dist}px)`
+  dist += prev;
+  y.style.transform = `translateX(${dist}px)`;
+  prev = dist;
   console.log(dist);
 }
