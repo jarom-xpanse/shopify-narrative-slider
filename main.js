@@ -17,7 +17,7 @@ function init() {
   span = indicators.querySelectorAll('span');
 
   window.addEventListener("mousemove", showCursorLocation);
-  // window.addEventListener("mouseout", e => indicators.style.transform = "translateX(0)");
+  window.addEventListener("mouseout", e => indicators.style.transform = "translateX(0)");
   window.addEventListener("keyup", detectKey);
 
   function showCursorLocation(e) {

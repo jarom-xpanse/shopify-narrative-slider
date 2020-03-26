@@ -178,6 +178,8 @@ h2 {
   padding: 0.5em;
   padding-top: 20px;
   padding-bottom: 0;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
   width: 110vw;
   margin-left: -5vw;
 }
