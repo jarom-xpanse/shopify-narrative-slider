@@ -253,10 +253,6 @@ h2 {
   display: none;
 }
 
-.swipe > * {
-  border: 1px dashed black;
-}
-
 .swipe .left, .swipe .right {
   -webkit-box-flex: 1;
       -ms-flex: 1 1;
