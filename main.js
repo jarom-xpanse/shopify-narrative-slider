@@ -106,5 +106,37 @@ function centerActiveSlide() {
   dist += prev;
   y.style.transform = `translateX(${dist}px)`;
   prev = dist;
-  console.log(dist);
+  // console.log(dist);
 }
+
+// swipe codes;
+
+var left = document.querySelector('#left');
+var right = document.querySelector('#right');
+var main = document.querySelector('#main');
+
+left.addEventListener('click', e=> console.log('left'));
+right.addEventListener('click', e=> console.log('right'));
+
+// main.addEventListener('mousemove', mainSwipe ); // for debugging
+main.addEventListener('mousedown', mainSwipe );
+main.addEventListener('mouseup', mainSwipe);
+main.addEventListener('mouseout', mainSwipe);
+
+let posX, prevPosX;
+function mainSwipe(e) {
+  if ((e.type == "mousedown") || (e.type == "mouseout" && e.buttons == 1)) {
+    prevPosX = e.offsetX;
+  }
+  if (e.type == "mouseup") {
+    posX = e.offsetX;
+    diff = posX - prevPosX;
+    if (diff > 40) {
+      console.log("right");
+    } else if (diff < -40) {
+      console.log("left");
+    }
+  }
+}
+
+ 

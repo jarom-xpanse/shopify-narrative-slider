@@ -241,6 +241,31 @@ body {
     // border: 3px solid black; // for mobile debugging only
 }
 
+.swipe {
+  position: absolute;
+  z-index: 3;
+  // border: 5px dotted black;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  > * {
+    border: 1px dashed black;
+  }
+  .left, .right{
+    flex: 1 1;
+    flex-basis: 1em;
+
+  }
+  .left:hover, .right:hover {
+    cursor: pointer;
+  }
+  .main {
+    flex: 5 1;
+
+  }
+
+}
+
 @media only screen and (max-width: 749px) {
     body {
         // border: 2px dashed black;
@@ -264,5 +289,8 @@ body {
     
     .slideshow__indicators {
       visibility: visible;
+    }
+    .swipe {
+      display: flex;
     }
 }
