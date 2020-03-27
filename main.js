@@ -125,10 +125,10 @@ main.addEventListener('mouseout', mainSwipe);
 
 let posX, prevPosX;
 function mainSwipe(e) {
-  if ((e.type == "mousedown") || (e.type == "mouseout" && e.buttons == 1)) {
+  if (e.type == "mousedown") {
     prevPosX = e.offsetX;
   }
-  if (e.type == "mouseup") {
+  if ((e.type == "mouseup") || (e.type == "mouseout" && e.buttons == 1)) {
     posX = e.offsetX;
     diff = posX - prevPosX;
     if (diff > 40) {
