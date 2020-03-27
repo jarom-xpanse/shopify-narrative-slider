@@ -1,0 +1,137 @@
+[33mcommit fc9c90f786cb61563117afa9fa28b59ba4b9c264[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: jarom-xpanse <jarom.xpanse@gmail.com>
+Date:   Fri Mar 27 11:10:36 2020 +0800
+
+    status bar below slider on mobile but without functionality yet
+
+[33mcommit 06ae7ccdb2adfb9b8af4bcf9cc6bebf245795a97[m
+Author: jarom-xpanse <jarom.xpanse@gmail.com>
+Date:   Thu Mar 26 17:10:56 2020 +0800
+
+    smoothen slide-title movement on mobile
+
+[33mcommit faa0f20f0869598c5aca98d2e8a1eb6497bda438[m
+Author: jarom-xpanse <jarom.xpanse@gmail.com>
+Date:   Thu Mar 26 16:57:05 2020 +0800
+
+    smoothen slide-title movement on desktop by using transition
+
+[33mcommit 1919aa94ad6c1792733fe00ba752634654dfb5c8[m
+Author: jarom-xpanse <jarom.xpanse@gmail.com>
+Date:   Thu Mar 26 12:51:50 2020 +0800
+
+    lessen lag on slide-title transition on mobile
+
+[33mcommit 4925c71cdd2874abdc6173bef514c106e797ca27[m
+Author: jarom-xpanse <jarom.xpanse@gmail.com>
+Date:   Thu Mar 26 12:10:07 2020 +0800
+
+    center active slide title on mobile
+
+[33mcommit 5179cc85071b180ec3d93195ef180167e4fc1050[m
+Author: jarom-xpanse <jarom.xpanse@gmail.com>
+Date:   Wed Mar 25 18:39:35 2020 +0800
+
+    desktop transform 3d effect on slide-title added
+
+[33mcommit 587b0ff4f0d2783a3a6b830739269433c756df5d[m
+Author: jarom-xpanse <jarom.xpanse@gmail.com>
+Date:   Wed Mar 25 18:37:19 2020 +0800
+
+    desktop transform 3d effect on slide-title added
+
+[33mcommit 23fe18a7b531abc588f80e143ed13dc9e83e65be[m
+Author: jarom-xpanse <jarom.xpanse@gmail.com>
+Date:   Wed Mar 25 18:02:53 2020 +0800
+
+    font saved to local to eliminate error
+
+[33mcommit 1710cb75e818bcc77dbe156524f4c582a358bab1[m
+Author: jarom-xpanse <jarom.xpanse@gmail.com>
+Date:   Wed Mar 25 17:53:17 2020 +0800
+
+    tracking of cursor prevented in mobile
+
+[33mcommit 1ce808de34e8881ecbdc6ff56f26df159f3914cb[m
+Author: jarom-xpanse <jarom.xpanse@gmail.com>
+Date:   Wed Mar 25 16:18:03 2020 +0800
+
+    debug mode before trying smooth movement
+
+[33mcommit 2da7471a207d64e360b132ba57833766d007e045[m
+Author: jarom-xpanse <jarom.xpanse@gmail.com>
+Date:   Wed Mar 25 15:18:56 2020 +0800
+
+    slide-title underline effect when active and opacity blur when hovered
+
+[33mcommit 62c6933cae06244ec1976aff65ad3e8945057948[m
+Author: jarom-xpanse <jarom.xpanse@gmail.com>
+Date:   Wed Mar 25 13:03:54 2020 +0800
+
+    Detect keyboard Arrow Left and Right to change slide
+
+[33mcommit c8ce2ec25aab673fa9fe55dba8533d68a8f2f810[m
+Author: jarom-xpanse <jarom.xpanse@gmail.com>
+Date:   Wed Mar 25 11:21:01 2020 +0800
+
+    title header centered
+
+[33mcommit 738f442a1d00585ed517f935c4edac8577c35c2e[m
+Author: jarom-xpanse <jarom.xpanse@gmail.com>
+Date:   Wed Mar 25 11:00:43 2020 +0800
+
+    change slide when title is clicked
+
+[33mcommit af78bf633cea6dead658abe00c2a509738cda534[m
+Author: jarom-xpanse <jarom.xpanse@gmail.com>
+Date:   Wed Mar 25 10:32:58 2020 +0800
+
+    bug when slide-title hovered is fixed
+
+[33mcommit d9ea6417af36698242b5190b65b921cd3dad897e[m
+Author: jarom-xpanse <jarom.xpanse@gmail.com>
+Date:   Tue Mar 24 18:49:38 2020 +0800
+
+    initial javascript codes added
+
+[33mcommit b4e126cd88df13fe2a959bd2a32e83f77dc0eeeb[m
+Author: jarom-xpanse <jarom.xpanse@gmail.com>
+Date:   Tue Mar 24 18:17:34 2020 +0800
+
+    styles in desktop view almost done
+
+[33mcommit 2f3549899ee0290dbd960eba33c43ade3b60fee1[m
+Author: jarom-xpanse <jarom.xpanse@gmail.com>
+Date:   Tue Mar 24 17:16:58 2020 +0800
+
+    svg zoom and centered and h1 is now being debug to be on top
+
+[33mcommit 4e12eb2d8acbd78ff6b4ad125ec3e1a9975b649c[m
+Author: jarom-xpanse <jarom.xpanse@gmail.com>
+Date:   Tue Mar 24 16:01:40 2020 +0800
+
+    html and css reduced
+
+[33mcommit d55909fc0e221cfcf939f59496f43eadd68a0328[m
+Author: jarom-xpanse <jarom.xpanse@gmail.com>
+Date:   Tue Mar 24 13:13:28 2020 +0800
+
+    unused classes are removed
+
+[33mcommit 2cc2564de49220ff3c5f637bb89c2875328fc0be[m
+Author: jarom-xpanse <jarom.xpanse@gmail.com>
+Date:   Mon Mar 23 18:14:04 2020 +0800
+
+    svg transfer to external for a cleaner markup
+
+[33mcommit 09c3820847dadf15e4503be3120c9fd5f28d571f[m
+Author: jarom-xpanse <jarom.xpanse@gmail.com>
+Date:   Mon Mar 23 18:02:38 2020 +0800
+
+    svg converted to img
+
+[33mcommit d5bbce096b96afcd76a773418566b39844a97852[m
+Author: jarom-xpanse <jarom.xpanse@gmail.com>
+Date:   Mon Mar 23 16:27:38 2020 +0800
+
+    HTML structure replicated
